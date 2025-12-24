@@ -22,30 +22,24 @@ DATETIME=$(date +%Y-%m-%dT06:00:00Z)
 # Full file path
 FILEPATH="$BLOG_DIR/$DATE-$SLUG.md"
 
-# Create the file with frontmatter
+# Create the file with frontmatter (draft by default)
 cat > "$FILEPATH" << EOF
 ---
 title: "$TITLE"
 pubDatetime: $DATETIME
 description: ""
+draft: true
 ---
 
 EOF
 
 echo "Created: $FILEPATH"
 echo ""
-echo "Opening in VS Code... Write your post, then save and close the file."
-
-# Open in VS Code and wait for it to close
-code --wait "$FILEPATH"
-
-# After VS Code closes, publish
+echo "Opening in VS Code..."
 echo ""
-echo "Publishing..."
-cd "$PROJECT_DIR"
-git add .
-git commit -m "New post: $TITLE"
-git push
+echo "When ready to publish, run:"
+echo "  cd $PROJECT_DIR"
+echo "  git add . && git commit -m 'New post: $TITLE' && git push"
 
-echo ""
-echo "✓ Published! Live at https://mattcoffman.com/posts/$DATE-$SLUG/"
+# Open in VS Code (don't wait)
+code "$FILEPATH"
