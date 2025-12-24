@@ -2,7 +2,7 @@
 
 # Usage: ./newpost.sh "My Post Title"
 
-BLOG_DIR="$HOME/Documents/MattCoffman.com/mattcoffman-dot-com/src/content/blog"
+BLOG_DIR="$HOME/Documents/MattCoffman.com/mattcoffman-dot-com/src/data/blog"
 PROJECT_DIR="$HOME/Documents/MattCoffman.com/mattcoffman-dot-com"
 
 # Get title from argument or prompt
