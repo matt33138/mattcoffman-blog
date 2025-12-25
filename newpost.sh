@@ -2,7 +2,7 @@
 
 # Usage: ./newpost.sh "My Post Title"
 
-BLOG_DIR="$HOME/Documents/MattCoffman.com/mattcoffman-dot-com/src/data/blog"
+BLOG_DIR="/Users/mattcoffman/Documents/PKM/Core PKM/Blog Posts"
 PROJECT_DIR="$HOME/Documents/MattCoffman.com/mattcoffman-dot-com"
 
 # Get title from argument or prompt
@@ -35,11 +35,11 @@ EOF
 
 echo "Created: $FILEPATH"
 echo ""
-echo "Opening in VS Code..."
+echo "Opening in Obsidian..."
 echo ""
-echo "When ready to publish, run:"
-echo "  cd $PROJECT_DIR"
-echo "  git add . && git commit -m 'New post: $TITLE' && git push"
+echo "When ready to publish:"
+echo "  1. Change draft: true → draft: false"
+echo "  2. Run: ./publish.sh"
 
-# Open in VS Code (don't wait)
-code "$FILEPATH"
+# Open in Obsidian
+open "obsidian://open?vault=Core%20PKM&file=Blog%20Posts%2F$DATE-$SLUG"
