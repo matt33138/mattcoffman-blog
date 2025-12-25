@@ -8,9 +8,9 @@ PROJECT_DIR="$HOME/Documents/MattCoffman.com/mattcoffman-dot-com"
 
 cd "$PROJECT_DIR"
 
-# Sync from Obsidian to Astro
+# Sync from Obsidian to Astro (including deletions)
 echo "Syncing from Obsidian..."
-cp "$OBSIDIAN_BLOG"/*.md "$ASTRO_BLOG/"
+rsync -av --delete "$OBSIDIAN_BLOG/" "$ASTRO_BLOG/"
 
 # Check if there are changes to commit
 if [ -z "$(git status --porcelain)" ]; then
