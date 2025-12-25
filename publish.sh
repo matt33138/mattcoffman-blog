@@ -2,9 +2,15 @@
 
 # Usage: ./publish.sh
 
+OBSIDIAN_BLOG="/Users/mattcoffman/Documents/PKM/Core PKM/Blog Posts"
+ASTRO_BLOG="$HOME/Documents/MattCoffman.com/mattcoffman-dot-com/src/data/blog"
 PROJECT_DIR="$HOME/Documents/MattCoffman.com/mattcoffman-dot-com"
 
 cd "$PROJECT_DIR"
+
+# Sync from Obsidian to Astro
+echo "Syncing from Obsidian..."
+cp "$OBSIDIAN_BLOG"/*.md "$ASTRO_BLOG/"
 
 # Check if there are changes to commit
 if [ -z "$(git status --porcelain)" ]; then
@@ -13,6 +19,7 @@ if [ -z "$(git status --porcelain)" ]; then
 fi
 
 # Show what's being published
+echo ""
 echo "Publishing changes:"
 git status --short
 echo ""
