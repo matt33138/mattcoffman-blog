@@ -4,7 +4,7 @@ pubDatetime: 2025-12-27T06:00:00Z
 description: Expression through pulsation...
 draft: false
 ---
-For the past five years, I've had the extreme good fortune of studying classical guitar with the incredible [Frank Bungarten](https://frankbungarten.de). 
+For the past five years, I've had the extreme good fortune of studying classical guitar with the incredible <a href="https://frankbungarten.de" target="_blank">Frank Bungarten</a>. 
 
 I could fill hundreds of posts with different Zen truths shared by Frank through the lens of classical guitar playing. Studying with Frank is like learning straight from Guitar Yoda. 
 
