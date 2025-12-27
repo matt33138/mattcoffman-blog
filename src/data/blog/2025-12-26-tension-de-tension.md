@@ -1,7 +1,7 @@
 ---
 title: Tension De-Tension
-pubDatetime: 2025-12-26T06:00:00Z
-description: ""
+pubDatetime: 2025-12-27T06:00:00Z
+description: Expression through pulsation...
 draft: false
 ---
 For the past five years, I've had the extreme good fortune of studying classical guitar with the incredible [Frank Bungarten(https://frankbungarten.de)]. 
