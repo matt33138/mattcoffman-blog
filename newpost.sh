@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Usage: ./newpost.sh "My Post Title"
+# Usage: ./newpost.sh "My Post Title" [YYYY-MM-DD]
+# If no date provided, defaults to today
 
 BLOG_DIR="/Users/mattcoffman/Documents/PKM/Core PKM/Blog Posts"
 PROJECT_DIR="$HOME/Documents/MattCoffman.com/mattcoffman-dot-com"
@@ -12,12 +13,17 @@ else
     TITLE="$1"
 fi
 
+# Get date from second argument or use today
+if [ -z "$2" ]; then
+    DATE=$(date +%Y-%m-%d)
+else
+    DATE="$2"
+fi
+
+DATETIME="${DATE}T06:00:00Z"
+
 # Generate slug from title (lowercase, spaces to hyphens, remove special chars)
 SLUG=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | sed 's/[^a-z0-9-]//g')
-
-# Today's date
-DATE=$(date +%Y-%m-%d)
-DATETIME=$(date +%Y-%m-%dT06:00:00Z)
 
 # Full file path
 FILEPATH="$BLOG_DIR/$DATE-$SLUG.md"
@@ -34,6 +40,7 @@ draft: true
 EOF
 
 echo "Created: $FILEPATH"
+echo "Publish date: $DATE"
 echo ""
 echo "Opening in Obsidian..."
 echo ""
