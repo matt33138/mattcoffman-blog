@@ -5,7 +5,7 @@ title: "About"
 
 Matt Coffman is an entrepreneur, writer, and musician based in Nashville.
 
-He's the founder of **Therapy Practice Accelerator**, which helps therapists build thriving private practices.
+He's the founder of <a href="https://therapypracticeaccelerator.com" target="_blank">Therapy Practice Accelerator</a>, which helps therapists build thriving private practices.
 
 He co-founded <a href="https://momentumlab.com" target="_blank">Momentum Lab</a>, a community of difference makers leveraging the proprietary quarterly focusing system that emerged from Matt's work with clients in TPA.
 
