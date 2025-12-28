@@ -1,7 +1,6 @@
 ---
 title: Tension De-Tension
 pubDatetime: 2025-12-27T06:00:00Z
-description:
 draft: false
 ---
 For the past five years, I've had the extreme good fortune of studying classical guitar with the incredible <a href="https://frankbungarten.de" target="_blank">Frank Bungarten</a>. 

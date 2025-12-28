@@ -33,7 +33,6 @@ cat > "$FILEPATH" << EOF
 ---
 title: "$TITLE"
 pubDatetime: $DATETIME
-description: ""
 draft: true
 ---
 
