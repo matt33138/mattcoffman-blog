@@ -3,7 +3,7 @@ title: Memento Mori
 pubDatetime: 2025-12-29T06:00:00Z
 draft: false
 ---
-The past year is in its final throes - dead in just a few days. 
+2025 is in its final throes - dead in just a few days. 
 
 Memento Mori. Remember Death. 
 
